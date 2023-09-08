@@ -16,12 +16,14 @@ body {
     width: 95%;
     height: 100px;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navegador {
     display: flex;
     background-color: rgba(255, 255, 255, .6);
-    width: 13%;
+    width: 10%;
     height: 45%;
     justify-content: center;
     align-items: center;
@@ -29,7 +31,12 @@ body {
     color: black;
 }
 
- .columnas {
+.logo {
+    width: 13%;
+    height: 80%;
+}
+
+.columnas {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
