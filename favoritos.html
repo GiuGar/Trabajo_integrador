@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="./CSS/stylefavoritos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+</head>
+<body>
+    <header class="cabecera"> 
+       <a class="navs" href="./home.html"> Inicio </a>
+       <a class="navs" href="./peliculas.html"> Películas </a>
+       <a class="navs" href="./series.html"> Series </a>
+       <a class="navs" href="./generos.html"> Generos </a>
+       <a class="navs" href="./favoritos.html"> Favoritos </a>
+
+       <img class="logo" src="./Imagenes/logo.JPG">
+
+       <form class="busqueda" action="resultados.html" method="get">
+       <input class="barra" type="text" autocomplete="off" id="busqueda" placeholder="Buscar una serie, pelicula o genero">
+       <input class="boton" type="submit" value="Buscar">
+       </form>
+    </header>
+
+    <h1>Favoritos</h1>
+    <section class="columnas">
+        <article class="peli"> 
+            <a href="./detalleserie.html"><img class="imagen" src="./Imagenes/familyguy.jpg"></a>
+            <p class="titulo"><strong>Family Guy</strong></p>
+            <p class="estreno"><strong>Estreno:</strong> 31 de enero de 1999</p>
+        </article>
+        <article class="peli"> 
+            <a href="./detallepeli.html"><img class="imagen" src="./Imagenes/titanic.png"></a>
+            <p class="titulo"><strong>Titanic</strong></p>
+            <p class="estreno"><strong>Estreno:</strong> 5 de febrero de 1998</p>
+        </article>
+        <article class="peli"> 
+            <a href="./detallepeli.html"><img class="imagen" src="./Imagenes/mammamia.jpg"></a>
+            <p class="titulo"><strong>Mamma Mia</strong></p>
+            <p class="estreno"><strong>Estreno:</strong> 29 de junio de 2006</p>
+        </article>
+        <article class="peli"> 
+            <a href="./detallepeli.html"><img class="imagen" src="./Imagenes/cars.webp"></a>
+            <p class="titulo"><strong>Cars</strong></p>
+            <p class="estreno"><strong>Estreno:</strong> 21 de agosto de 2008</p>
+        </article>
+        <article class="peli"> 
+            <a href="./detallepeli.html"><img class="imagen" src="./Imagenes/fightclub.jpg"></a>
+            <p class="titulo"><strong>Fight Club</strong></p>
+            <p class="estreno"><strong>Estreno:</strong> 4 de noviembre de 1999</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>M. Candela Segura, Giuliana Gargiulo, Isabella Purita</p>
+    </footer>
+
+</body>
+</html>
