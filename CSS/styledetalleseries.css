@@ -24,9 +24,9 @@ body {
 .navs {
     display: flex; 
     color: white;
+    font-size: 1.1vw;
     width: 8vw;
     height: 35%;
-    font-size: 1.1vw;
     background-color: rgba(255, 255, 255, .2);
     justify-content: center;
     align-items: center;
@@ -54,7 +54,6 @@ body {
     color: white;
     width: 100%;
     height: 30px;
-    font-size: 1vw;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 15px 0 0 15px; 
     border: solid 1.5px rgba(255, 255, 255, .5);
@@ -63,15 +62,81 @@ body {
 .boton {
     color: white;
     height: 30px;
+    font-size: 1vw;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 0 15px 15px 0;
     border: solid 1.5px rgba(255, 255, 255, .4);
 }
 
+.detalle {
+    display: flex;
+    width: 100%;
+    height: 420px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  
+}
+
+.imagen {
+    background-color: blue;
+    width: 320px;
+    height: 460px;
+    margin: 0 2% 0 20%;
+    
+
+}
+
+.info {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20% 0 2%;
+    background-color: rgb(14, 41, 77);
+    font-family:  'Open Sans', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: xx-large;
+    margin: 10px 0;
+}
+
+h2 {
+    color: white;
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+.sinopsis {
+    margin: 0 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-family:  'Open Sans', sans-serif;
+}
+
+.texto {
+    margin: 0 20px 0 -200px;
+    color: white;
+    margin-left: -110px;
+}
+
+.texto1 {
+    color: white;
+}
+
 footer {
-    background-color: red;
+    background-color: rgba(255, 255, 255, .6);
     width: 100%;
     height: 40px;
     font-size: 15px;
     padding-left: 10px;
-}
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
