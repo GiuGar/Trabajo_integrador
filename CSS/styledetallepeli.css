@@ -111,6 +111,8 @@ h2 {
 .sinopsis {
     margin: 0 20px 20px 20px;
     text-align: center;
+    width: 150px;
+    height: fit-content;
 }
 
 .texto {
@@ -122,30 +124,27 @@ h2 {
     color: white;
 }
 
+.sinopsis{
+   display: flex;
+   justify-content: center;
+   
+   border: 100%;
+   flex-direction: column;
+   font-size: small;
+   padding-bottom: 100px ;
+
+  
+}
+.texto {
+   display: flex;
+   justify-content: center;
+
+}
+
 footer {
     background-color: rgba(255, 255, 255, .6);
     width: 100%;
     height: 40px;
     font-size: 15px;
     justify-content: flex-start;
-    
-
-
- }
- .sinopsis{
-    display: flex;
-    justify-content: center;
-    width:150px;
-    height: fit-content;
-    border:100%;
-    flex-direction: column;
-    font-size: small;
-    padding-bottom: 100px ;
-
-   
- }
- .texto {
-    display: flex;
-    justify-content: center;
-
- }
+}
