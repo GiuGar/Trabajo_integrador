@@ -77,13 +77,17 @@ body {
     flex-direction: row;
     margin-top: -20px;
     margin-bottom: 10px;
+    margin-top: 30px;
+  
 }
 
 .imagen {
     background-color: blue;
-    width: 260px;
-    height: 400px;
+    width: 320px;
+    height: 460px;
     margin: 0 2% 0 20%;
+    
+
 }
 
 .info {
@@ -93,7 +97,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 20% 0 2%;
-    background-color: red;
+    background-color: rgb(14, 41, 77);
+    font-family: font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -111,11 +116,14 @@ h2 {
 .sinopsis {
     margin: 0 20px 20px 20px;
     text-align: center;
+    color: white;
+    font-family: font-family: 'Open Sans', sans-serif;
 }
 
 .texto {
     margin: 0 20px 0 -200px;
     color: white;
+    margin-left: -100px;
 }
 
 .texto1 {
@@ -128,4 +136,7 @@ footer {
     height: 40px;
     font-size: 15px;
     padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
  }
