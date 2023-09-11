@@ -128,4 +128,22 @@ footer {
     height: 40px;
     font-size: 15px;
     padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+ .sinopsis{
+    display: flex;
+    justify-content: center;
+    width:150px;
+    height: fit-content;
+    border:100%;
+    flex-direction: column;
+    font-size: small;
+   
+ }
+ .texto {
+    display: flex;
+    justify-content: center;
+
  }
