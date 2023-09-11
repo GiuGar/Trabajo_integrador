@@ -128,4 +128,7 @@ footer {
     height: 40px;
     font-size: 15px;
     padding-left: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
  }
