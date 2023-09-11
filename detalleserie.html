@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="./CSS/styledetalleseries.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -11,42 +12,43 @@
 </head>
 <body>
     <header class="cabecera"> 
-        <a class="navs" href="./home.html"> Inicio </a>
-        <a class="navs" href="./peliculas.html"> Películas </a>
-        <a class="navs" href="./series.html"> Series </a>
-        <a class="navs" href="./generos.html"> Generos </a>
-        <a class="navs" href="./favoritos.html"> Favoritos </a>
- 
-        <form class="busqueda" action="resultados.html" method="get">
-        <input class="barra" type="text" autocomplete="off" id="busqueda" placeholder="  Buscar una serie, pelicula o genero">
-        <input class="boton" type="submit" value="Buscar">
-        </form>
- 
-        <img class="logo" src="./Imagenes/logo.JPG">
- 
+       <a class="navs" href="./home.html"> Inicio </a>
+       <a class="navs" href="./peliculas.html"> Películas </a>
+       <a class="navs" href="./series.html"> Series </a>
+       <a class="navs" href="./generos.html"> Generos </a>
+       <a class="navs" href="./favoritos.html"> Favoritos </a>
+
+       <form class="busqueda" action="resultados.html" method="get">
+       <input class="barra" type="text" autocomplete="off" id="busqueda" placeholder="  Buscar una serie, pelicula o genero">
+       <input class="boton" type="submit" value="Buscar">
+       </form>
+
+       <img class="logo" src="./Imagenes/logo.JPG">
+
     </header>
 
-</header>
+    <section class="detalle">
+        <article class="izquierda">
+        <img class="imagen" src="./Imagenes/friends.jpg">
+        <a class="trailer"> 🎬 Ver Trailer </a>
+        </article>
 
-<section class="detalle">
+        <article class="info">
+            <h1>Mamma Mia: The movie</h1>
+            <h2>Sinopsis</h2>
+            <p class="sinopsis">Meryl Streep y Amanda Seyfried protagonizan esta comedia musical inspirada en las canciones de la popular banda ABBA de los años 70.<br><br>Donna, una madre soltera y hotelera independiente de las islas griegas, prepara la boda de su hija, Sophie. Su alegre hija tiene su tiene su propio plan. Invita a la boda a tres hombres del pasado de su madre, con la esperanza de encontrar a su padre biológico y que este la acompañe al altar. 
+            <div class="detalles"> 
+                <p class="texto"><strong>Calificacion: ☆ ☆ ☆ ☆ ☆</strong></p>
+                <p class="texto"><strong>Fecha de estreno:</strong> 21 de agosto de 2008</p>
+                <p class="texto"><strong>Duración:</strong> 1h 48m</p>
+                <p class="texto"><strong>Género:</strong> <a class="texto1" href="./detallegeneros.html">Romance,</a> <a class="texto1" href="./detallegeneros.html">Comedia,</a> <a class="texto1" href="./detallegeneros.html">Musical</a></p>
+            </div>
+            <div class="favs">
+                <a href="favoritos.html" class="corazon fa-regular fa-heart fa-2xl"></a>
+            </div>
+        </article>
 
-    <img class="imagen" src="./Imagenes/friends.jpg">
-
-    <article class="info">
-        <h1>Mamma Mia: The movie</h1>
-        <h2>Sinopsis</h2>
-        <p class="sinopsis">Meryl Streep y Amanda Seyfried protagonizan esta comedia musical inspirada en las canciones de la popular banda ABBA de los años 70.<br> Donna, una hotelera independiente de las islas griegas, prepara la boda de su hija con la ayuda de dos viejos amigos. Mientras tanto, Sophie, la alegre hija de Donna, tiene su propio plan. Invita a la boda a tres hombres del pasado de su madre con la esperanza de conocer a su padre biológico para que la acompañe al altar. 
-        <div> 
-            <p class="texto"><strong>Calificacion: ☆ ☆ ☆ ☆ ☆</strong></p>
-            <p class="texto"><strong>Fecha de estreno:</strong> 21 de agosto de 2008</p>
-            <p class="texto"><strong>Duración:</strong> 1h 48m</p>
-            <p class="texto"><strong>Género:</strong> <a class="texto1" href="./detallegeneros.html">Romance,</a> <a class="texto1" href="./detallegeneros.html">Comedia,</a> <a class="texto1" href="./detallegeneros.html">Musical</a> <br> 🤍</p>
-            
-        </div>
-    </article>
-
-</section>
-
+    </section>
 
     <footer>
         <p>M. Candela Segura, Giuliana Gargiulo, Isabella Purita</p>

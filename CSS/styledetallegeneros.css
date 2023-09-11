@@ -38,7 +38,7 @@ body {
 
 .logo {
     width: 13vw;
-    height: 80%;
+    height: 15vh;
     margin-left: 1vw;
 }
 
@@ -130,4 +130,6 @@ footer {
     height: 40px;
     font-size: 15px;
     padding-left: 10px;
+    position: absolute;
+    bottom: 0;
 }

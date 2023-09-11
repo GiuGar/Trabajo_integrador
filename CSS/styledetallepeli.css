@@ -18,7 +18,7 @@ body {
     background-color: rgb(3, 25, 54);
     align-items: center;
     flex-wrap: wrap;
-    margin: -10px 0 30px 0;
+    margin: -10px 0 25px 0;
 }
 
 .navs {
@@ -38,7 +38,7 @@ body {
 
 .logo {
     width: 13vw;
-    height: 80%;
+    height: 15vh;
     margin-left: 1vw;
 }
 
@@ -70,64 +70,92 @@ body {
 
 .detalle {
     display: flex;
-    width: 100%;
-    height: 420px;
+    width: 80vw;
+    height: 68vh;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    margin-top: -20px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-  
+    margin: 0 0 10px 0;
+}
+
+.izquierda{
+    display: flex;
+    width: 20vw;
+    height: 100%;  
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .imagen {
-    background-color: blue;
-    width: 320px;
-    height: 460px;
-    margin: 0 2% 0 20%;
-    
+    width: 20vw;
+    height: 60vh;
+}
 
+.trailer {
+    color: white;
+    font-size: medium;
+    text-align: center;
+    margin-top: 0px;
 }
 
 .info {
     display: flex;
-    width: 40%;
+    width: 60%;
     height: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 0 20% 0 2%;
-    background-color: rgb(14, 41, 77);
-    font-family:  'Open Sans', sans-serif;
 }
 
 h1 {
     color: white;
     font-size: xx-large;
-    margin: 10px 0;
+    margin: 10px 0 0 10px;
 }
 
 h2 {
     color: white;
     font-size: x-large;
-    margin: 10px 0;
+    margin-bottom: 10px;
 }
 
 .sinopsis {
-    margin: 0 20px 20px 20px;
-    text-align: center;
     color: white;
-    font-family:  'Open Sans', sans-serif;
+    font-size: small;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 40px 20px 40px;
+}
+
+.detalles {
+    display: flex;
+    width: 85%;
+    height: fit-content;
+    flex-direction: column;
 }
 
 .texto {
-    margin: 0 20px 0 -200px;
     color: white;
-    margin-left: -110px;
+    font-size: medium;
+    margin: 0 0 5px 0;
 }
 
 .texto1 {
     color: white;
+}
+
+.favs {
+    display: flex;
+    width: 70%;
+    height: 5%;
+    justify-content: right;
+}
+
+.corazon {
+    color: rgb(245, 245, 255);
+}
+
+.corazon:hover {
+    color: rgba(255, 255, 255, .3);
 }
 
 footer {
@@ -138,5 +166,4 @@ footer {
     padding-left: 10px;
     position: absolute;
     bottom: 0;
-    width: 100%;
  }
