@@ -72,7 +72,6 @@ body {
     height: 380px;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 .peliculas {
@@ -96,7 +95,8 @@ body {
 h1 {
     width: 100%;
     height: 15%;
-    color: black;
+    color: white;
+    line-height: 35px;
     font-size: 2.5vw;
     text-align: center;
 }
