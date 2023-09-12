@@ -11,6 +11,11 @@ body {
     align-items: center;
 }
 
+.contenedor {
+    width: 120%;
+    max-width: 1500px;
+}
+
 .cabecera {
     display: flex; 
     width: 102%;
@@ -79,16 +84,16 @@ body {
 }
 
 .izquierda{
-    display: flex;
-    width: 20vw;
+    width: 25%;
     height: 100%;  
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .imagen {
-    width: 20vw;
-    height: 60vh;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
 }
 
 .trailer {
@@ -158,12 +163,24 @@ h2 {
     color: rgba(255, 255, 255, .3);
 }
 
+.video {
+    color: white;
+}
+
 footer {
     background-color: rgba(255, 255, 255, .6);
     width: 100%;
     height: 40px;
     font-size: 15px;
-    padding-left: 10px;
     position: absolute;
     bottom: 0;
+
  }
+
+
+ 
+
+
+ 
+ 
+
