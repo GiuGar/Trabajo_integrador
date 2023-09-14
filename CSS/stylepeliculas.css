@@ -138,4 +138,27 @@ footer {
         justify-content: space-around;
         margin: -10px 0 0 0;
     }
+    .navs {
+        font-size: small;
+        width: 25vw;
+        height: 10vh;
+        margin: 10px 0 0 5vw;
+    }
     
+    .logo {
+        width: 25vw;
+        height: 10vh;
+        margin: 15px 0 0 6vw;
+    }
+    
+    .busqueda {
+        width: 60vw;
+        height: 10vh;
+        margin: 10px 0 0 10vw;
+    }
+
+    .columnas {
+        flex-wrap: wrap;
+    }
+
+}

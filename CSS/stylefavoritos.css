@@ -111,7 +111,41 @@ footer {
     padding-left: 10px;
  }
  
- @media screen and (max-width:900px) {
+ @media screen and (max-width:450px){
+    .cabecera {
+        width: 102%;
+        height: 35vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: -10px 0 0 0;
+    }
+    
+    .navs {
+        font-size: small;
+        width: 25vw;
+        height: 10vh;
+        margin: 10px 0 0 5vw;
+    }
+    
+    .logo {
+        width: 25vw;
+        height: 10vh;
+        margin: 15px 0 0 6vw;
+    }
+    
+    .busqueda {
+        width: 60vw;
+        height: 10vh;
+        margin: 10px 0 0 10vw;
+    }
+
+    .columnas {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:900px) {
     .peli {
         flex-wrap: wrap;
         display: block;
@@ -128,12 +162,3 @@ footer {
         height: 40%;
     }
 }
-
-@media screen and (max-width:450px){
-    .cabecera {
-        width: 102%;
-        height: 35vh;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: -10px 0 0 0;
-    }
