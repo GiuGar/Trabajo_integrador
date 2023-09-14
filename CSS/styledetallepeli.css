@@ -1,23 +1,27 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    display: flex;
     background-color: rgb(14, 41, 77);
+    display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 .contenedor {
-    width: 120%;
+    width: 100%;
     max-width: 1500px;
+    margin: 0 auto;
 }
 
 .cabecera {
-    display: flex; 
+    display: flex;
     width: 102%;
     height: 100px;
     background-color: rgb(3, 25, 54);
@@ -27,7 +31,7 @@ body {
 }
 
 .navs {
-    display: flex; 
+    display: flex;
     color: white;
     font-size: 1.1vw;
     width: 8vw;
@@ -38,7 +42,6 @@ body {
     border-radius: 12px;
     border: solid 1.5px rgba(255, 255, 255, .5);
     margin-left: 2vw;
-    
 }
 
 .logo {
@@ -60,7 +63,7 @@ body {
     width: 100%;
     height: 30px;
     background-color: rgba(255, 255, 255, .2);
-    border-radius: 15px 0 0 15px; 
+    border-radius: 15px 0 0 15px;
     border: solid 1.5px rgba(255, 255, 255, .5);
 }
 
@@ -75,46 +78,40 @@ body {
 
 .detalle {
     display: flex;
-    width: 80vw;
-    height: 68vh;
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 0 10px 0;
+    align-items: flex-start;
+    margin: 20px 0;
 }
 
-.izquierda{
-    width: 25%;
-    height: 100%;  
-    justify-content: center;
-    flex-wrap: wrap;
+.izquierda {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 20px;
 }
 
 .imagen {
     width: 100%;
     height: auto;
-    margin-left: 0;
 }
 
 .trailer {
     color: white;
-    font-size: medium;
+    font-size: 1vw;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .info {
-    display: flex;
-    width: 60%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
 }
 
 h1 {
     color: white;
     font-size: xx-large;
-    margin: 10px 0 0 10px;
+    margin: 10px 0;
 }
 
 h2 {
@@ -128,14 +125,13 @@ h2 {
     font-size: small;
     text-align: center;
     line-height: 20px;
-    margin: 0 40px 20px 40px;
+    margin: 0 20px 20px 0;
 }
 
 .detalles {
     display: flex;
-    width: 85%;
-    height: fit-content;
     flex-direction: column;
+    margin: 20px 0;
 }
 
 .texto {
@@ -150,9 +146,7 @@ h2 {
 
 .favs {
     display: flex;
-    width: 70%;
-    height: 5%;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .corazon {
@@ -163,22 +157,15 @@ h2 {
     color: rgba(255, 255, 255, .3);
 }
 
-.video {
-    color: white;
-}
 
 footer {
     background-color: rgba(255, 255, 255, .6);
     width: 100%;
     height: 40px;
     font-size: 15px;
-    position: absolute;
-    bottom: 0;
-
- }
-
-
- 
+    text-align: center;
+    margin-top: auto;
+}
 
 
  
