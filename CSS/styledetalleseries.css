@@ -166,3 +166,12 @@ footer {
     text-align: center;
     margin-top: auto;
 }
+
+@media screen and (max-width:450px){
+    .cabecera {
+        width: 102%;
+        height: 35vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: -10px 0 0 0;
+    }
