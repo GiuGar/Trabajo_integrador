@@ -18,7 +18,9 @@ body {
     height: 160px;
     background-color: rgb(3, 25, 54);
     flex-wrap: wrap;
-    margin: -10px 0 30;
+    margin: -10px 0 5px;
+    
+
 }
 
 .navs {
@@ -36,17 +38,18 @@ body {
 }
 
 .logo {
-    width: 13vw;
+    width: 10vw;
     height: 80%;
-    margin: 15px 0 0 6vw;
+    margin: 15px 0 0 14vw;
 }
 
 .busqueda {
     display: flex;
-    width: 60vw;
+    width: 55%;
+    height: 55%;
     justify-content: center;
     align-items: center;
-    margin: -70px 0 0 10vw;
+    margin: -55px 0 0 14vw;
 }
 
 .barra {
@@ -143,12 +146,6 @@ footer {
         width: 25vw;
         height: 10vh;
         margin: 10px 0 0 5vw;
-    }
-    
-    .logo {
-        width: 25vw;
-        height: 10vh;
-        margin: 15px 0 0 6vw;
     }
     
     .busqueda {

@@ -14,7 +14,7 @@ body {
 .cabecera {
     display: flex; 
     width: 102%;
-    height: 100px;
+    height: 150px;
     background-color: rgb(3, 25, 54);
     align-items: center;
     flex-wrap: wrap;
@@ -37,9 +37,10 @@ body {
 }
 
 .logo {
-    width: 13vw;
-    height: 80%;
-    margin: 15px 0 0 6vw;
+    width: 8vw;
+    height: 60%;
+    margin: 20px 0 0 6vw;
+
 }
 
 .busqueda {

@@ -37,9 +37,9 @@ body {
 }
 
 .logo {
-    width: 13vw;
+    width: 8vw;
     height: 80%;
-    margin-left: 1vw;
+    margin: 15px 0 0 6vw;
 }
 
 .busqueda {
