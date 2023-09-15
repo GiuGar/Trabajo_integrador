@@ -93,22 +93,22 @@ h1{
     text-align: center;
     margin-top: -20px;
 }
-
 .columnas {
     display: flex;
-    width: 95%;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
     margin-bottom: 20px;
  }
 
 .peli {
-    width: 14vw;
+    width: 17vw;
 }
 
 .imagen {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
  }
 
 .titulo {
@@ -118,7 +118,7 @@ h1{
     margin-bottom: 0px;
  }
 
- .estreno {
+.estreno {
     color: white;
     font-size: 12px;
     margin-top: 0px;
@@ -210,5 +210,12 @@ footer {
         height: 6vh;
         font-size: x-small;
     }
+    .columnas{
+    flex-wrap: wrap;
 
+}
+.peli{
+    flex-wrap: wrap;
+    width: 30vh;
+}
 }
