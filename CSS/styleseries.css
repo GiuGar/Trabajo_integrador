@@ -14,10 +14,11 @@ body {
 .cabecera {
     display: flex; 
     width: 102%;
-    height: 160px;
+    height: 27vh;
     background-color: rgb(3, 25, 54);
     flex-wrap: wrap;
-    margin: -10px 0 30;
+    margin: -2vh 0 2vh;
+
 }
 
 .navs {
@@ -31,27 +32,29 @@ body {
     align-items: center;
     border-radius: 20px;
     border: solid 1.5px rgba(255, 255, 255, .5);
-    margin: 30px 0 0 5vw;
+    margin: 5vh 0 0 5vw;
 }
 
 .logo {
-    width: 13vw;
-    height: 80%;
-    margin: 15px 0 0 6vw;
+    width: 12vw;
+    height: 16vh;
+    margin: 3vh 0 0 6vw;
+
 }
 
 .busqueda {
     display: flex;
-    width: 60vw;
+    width: 55%;
+    height: 13vh;
     justify-content: center;
     align-items: center;
-    margin: -70px 0 0 10vw;
+    margin: -5vh 0 0 14vw;
 }
 
 .barra {
     color: white;
     width: 100%;
-    height: 50%;
+    height: 7vh;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 15px 0 0 15px; 
     border: solid 1.5px rgba(255, 255, 255, .5);
@@ -59,7 +62,7 @@ body {
 
 .boton {
     color: white;
-    height: 50%;
+    height: 7vh;
     font-size: 1.1vw;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 0 15px 15px 0;
@@ -87,7 +90,7 @@ body {
 
 .imagen {
     width: 100%;
-    height: 300px;
+    height: 45vh;
  }
 
 .titulo {
@@ -110,3 +113,100 @@ footer {
     font-size: 15px;
     padding-left: 10px;
  }
+
+ @media screen and (max-width:450px){
+    .cabecera {
+        width: 102%;
+        height: 35vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .navs {
+        font-size: medium;
+        width: 26vw;
+        height: 7vh;
+        margin: 3vh 0 0 0;
+    }
+    
+    .logo {
+        width: 26vw;
+        height: 10vh;
+        margin: 2vh 0 0 0;
+    }
+    
+    .busqueda {
+        width: 100vw;
+        height: 10vh;
+        margin: 0.5vh 0 0 0;
+    }
+
+    .barra {
+        width: 65%;
+        height: 6vh;
+    }
+    
+    .boton {
+        width: 15%;
+        height: 6vh;
+        font-size: x-small;
+    }
+
+    .columnas {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .cabecera {
+        width: 102%;
+        height: 35vh;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .navs {
+        font-size: medium;
+        width: 26vw;
+        height: 7vh;
+        margin: 3vh 0 0 0;
+    }
+    
+    .logo {
+        width: 26vw;
+        height: 10vh;
+        margin: 2vh 0 0 0;
+    }
+    
+    .busqueda {
+        width: 100vw;
+        height: 10vh;
+        margin: 0.5vh 0 0 0;
+    }
+
+    .barra {
+        width: 65%;
+        height: 6vh;
+    }
+    
+    .boton {
+        width: 15%;
+        height: 6vh;
+        font-size: x-small;
+    }
+
+    .columnas {
+        flex-wrap: wrap;
+    }
+
+    .peli {
+        flex-wrap: wrap;
+        width: 30vh;
+    }
+
+    .imagen {
+        height: 40vh;
+    }
+
+}
