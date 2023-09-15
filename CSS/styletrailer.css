@@ -21,14 +21,13 @@ body {
 }
 
 .cabecera {
-   
-    
     display: flex; 
     width: 102%;
     height: 160px;
     background-color: rgb(3, 25, 54);
     flex-wrap: wrap;
-    margin: -10px 0 30px;
+    margin: -10px 0 5px;
+
 }
 
 .navs {
@@ -49,6 +48,7 @@ body {
     width: 10vw;
     height: 80%;
     margin: -55px 0 0 20vw;
+
 }
 
 .busqueda {
@@ -57,7 +57,7 @@ body {
     height: 55%;
     justify-content: center;
     align-items: center;
-    margin: 10px 0 0 15vw;
+    margin: 10px 0 0 14vw;
 }
 
 .barra {
@@ -75,92 +75,21 @@ body {
     font-size: 1.1vw;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 0 15px 15px 0;
-    border: solid 1.5px rgba(255, 255, 255, .4);}
-
-.detalle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 20px 0;
-}
-
-.izquierda {
-    display: flex;
-    width: 100%;
-    max-width: 300px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-right: 20px;
-}
-
-.imagen {
-    width: 100%;
-    height: auto;
+    border: solid 1.5px rgba(255, 255, 255, .4);
 }
 
 .trailer {
-    color: white;
-    font-size: 1vw;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.info {
-    flex: 1;
-    width: 100%;
-    max-width: 600px;
-}
-
-h1 {
-    color: white;
-    font-size: xx-large;
-    margin: 10px 0;
-}
-
-h2 {
-    color: white;
-    font-size: x-large;
-    margin-bottom: 10px;
-}
-
-.sinopsis {
-    color: white;
-    font-size: small;
-    text-align: center;
-    line-height: 20px;
-    margin: 0 20px 20px 0;
-}
-
-.detalles {
     display: flex;
-    flex-direction: column;
-    margin: 20px 0;
+    width: 100vw;
+    height: 68vh;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.texto {
-    color: white;
-    font-size: medium;
-    margin: 0 0 5px 0;
+.video {
+    width: 55vw;
+    height: 65vh;
 }
-
-.texto1 {
-    color: white;
-}
-
-.favs {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.corazon {
-    color: rgb(245, 245, 255);
-}
-
-.corazon:hover {
-    color: rgba(255, 255, 255, .3);
-}
-
 
 footer {
     background-color: rgba(255, 255, 255, .6);
@@ -168,7 +97,7 @@ footer {
     height: 40px;
     font-size: 15px;
     text-align: center;
-    margin-top: auto;
+    margin-top: 2vh;
 }
 
  @media screen and (max-width:450px){
@@ -198,26 +127,12 @@ footer {
         margin: 10px 0 0 10vw;
     }
 
-    .columnas {
-        flex-wrap: wrap;
-    }
-
 }
 
 @media screen and (max-width:900px) {
-    .peli {
-        flex-wrap: wrap;
-        display: block;
-        width: 30vh;
-        height: 40%;
-    }
+    
 }
 
 @media screen and (max-width:1100px) {
-    .peli {
-        flex-wrap: wrap;
-        display: block;
-        width: 30vh;
-        height: 40%;
-    }
+    
 }
