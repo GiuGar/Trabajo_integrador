@@ -218,4 +218,8 @@ footer {
     flex-wrap: wrap;
     width: 30vh;
 }
+.info{
+    flex-wrap: wrap;
+    width: 30vh;
+}
 }
