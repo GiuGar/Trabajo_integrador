@@ -192,6 +192,10 @@ footer {
         height: 60vh;
     }
 
+    .cuadro {
+        padding-top: 2vh;
+    }
+
 }
 
 @media screen and (max-width:900px) {
@@ -257,5 +261,8 @@ footer {
         line-height: 2vh;
     }
 
+    .cuadro {
+        padding-top: 2vh;
+    }
 
 }

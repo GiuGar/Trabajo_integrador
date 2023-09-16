@@ -171,6 +171,23 @@ footer {
         font-size: x-small;
     }
 
+    .info {
+        width: 90vw;
+        height: initial;
+    }
+
+    .datos {
+        width: 80vw;
+    }
+
+    .texto {
+        font-size: large;
+    }
+
+    .columnas {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width:900px) {
@@ -210,16 +227,32 @@ footer {
         height: 6vh;
         font-size: x-small;
     }
-    .columnas{
-    flex-wrap: wrap;
 
-}
-.peli{
-    flex-wrap: wrap;
-    width: 30vh;
-}
-.info{
-    flex-wrap: wrap;
-    width: 30vh;
-}
+    .info {
+        width: 90vw;
+        height: initial;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    .datos {
+        width: 80vw;
+        font-size: x-large;
+    }
+
+    .columnas {
+        flex-wrap: wrap;
+    }
+
+    .peli {
+        flex-wrap: wrap;
+        width: 30vh;
+    }
+
+    .imagen {
+        height: 40vh;
+    }
+
 }
