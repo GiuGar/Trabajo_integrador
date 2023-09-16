@@ -35,6 +35,10 @@ body {
     margin: 5vh 0 0 5vw;
 }
 
+.navs:hover {
+    border: 3px rgba(255, 255, 255, .5) solid;
+}
+
 .logo {
     width: 12vw;
     height: 16vh;
