@@ -1,4 +1,5 @@
 let apikey = "1eea5cd13b45ef02982782ec6843507b"
+
 let columna1 = document.querySelector(".columna1")
 let columna2 = document.querySelector(".columna2")
 let columna3 = document.querySelector(".columna3")
