@@ -34,5 +34,5 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
     `
  })
 .catch(function(error){
-    console.log("Hay un error")
+    console.log("Error")
 })

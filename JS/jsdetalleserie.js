@@ -5,7 +5,7 @@ let querystring = new URLSearchParams(busqueda)
 let id = querystring.get("id")
 let detalle = document.querySelector(".detalle")
 
-fetch(`https://api.themoviedb.org/3/${id}?api_key=${apikey}`)
+fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apikey}`)
 .then(function(resp){
     return resp.json()
 })
@@ -18,13 +18,13 @@ fetch(`https://api.themoviedb.org/3/${id}?api_key=${apikey}`)
     </article>
 
     <article class="info">
-    <h1>${data.title}</h1>
+    <h1>${data.name}</h1>
     <h2>Sinopsis</h2>
     <p class="sinopsis">${data.overview}</p>
     <div class="detalles"> 
         <p class="texto"><strong>Calificación: ${data.vote_average}</strong></p>
         <p class="texto"><strong>Fecha de estreno:</strong> ${data.release_date}</p>
-        <p class="texto"><strong>Duración:</strong> ${data.runtime} mins</p>
+        <p class="texto"><strong>Duración:</strong> ${data.number_of_seasons} Temporadas</p>
         <p class="texto"><strong>Género:</strong> <a class="texto1" href="./detallegeneros.html">${data.genres[0].name}</a></p>
     </div>
     <div class="favs">
