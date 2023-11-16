@@ -10,7 +10,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apikey}`)
  console.log(data)
  for(let i = 0; i < data.genres.length; i++){
     pelis.innerHTML += `
-    <a class="cuadro" href="detallegeneros.html">${data.genres[i].name}</a>
+    <a class="cuadro" href="./detallegeneros.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
         `
  }
 })
@@ -27,7 +27,7 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=${apikey}`)
  console.log(data)
  for(let i = 0; i < data.genres.length; i++){
     series.innerHTML += `
-    <a class="cuadro" href="detallegeneros.html">${data.genres[i].name}</a>
+    <a class="cuadro" href="./detallegeneros.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
         `
  }
 })
