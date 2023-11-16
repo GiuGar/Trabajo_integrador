@@ -5,7 +5,7 @@ let querystring = new URLSearchParams(busqueda)
 let id = querystring.get("id")
 let detalle = document.querySelector(".detalle")
 
-fetch(`https://api.themoviedb.org/3/${id}?api_key=${apikey}`)
+fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apikey}`)
 .then(function(resp){
     return resp.json()
 })
