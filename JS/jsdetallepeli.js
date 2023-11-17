@@ -4,6 +4,8 @@ let busqueda = location.search
 let querystring = new URLSearchParams(busqueda)
 let id = querystring.get("id")
 let detalle = document.querySelector(".detalle")
+let rec = document.querySelector(".rec")
+let titrec = document.querySelector(".titrec")
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
 .then(function(resp){
@@ -13,7 +15,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
  console.log(data)
  detalle.innerHTML += `
     <article class="izquierda">
-    <img class="imagen" src="https://image.tmdb.org/t/p/w500${data.poster_path}"/>
+    <img class="poster" src="https://image.tmdb.org/t/p/w500${data.poster_path}"/>
     <a href="./trailerpelicula.html" class="trailer"> 🎬 Ver Trailer </a>
     </article>
 
@@ -37,23 +39,27 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
     console.log("Hay un error")
 })
 
-fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${apikey}`)
-.then(function(resp){
-    return resp.json()
-})
-.then(function(data){
- console.log("Recomendaciones", data)
- for(let i = 0; i < 5; i++){
-    recomendaciones.innerHTML += `
-    <h1 class="Recomendaciones">titrec</h1>
-    <article class="peli"> 
-    <a href="./detallepeli.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
-    <p class="titulo"><strong>${data.results[i].original_title}</p>
-    <p class="estreno"><strong>Estreno: ${data.results[i].release_date}</p>
-    </article>
-        `
- }
-})
-.catch(function(error){
-    console.log("Hay un error")
-})
+titrec.addEventListener("click", function() {
+
+        fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${apikey}`)
+        .then(function(resp){
+            return resp.json()
+        })
+        .then(function(data){
+        console.log("Recomendaciones", data)
+        for(let i = 0; i < 5; i++){
+            rec.innerHTML += `
+            <section class="reco">
+                <article class="peli"> 
+                <a href="./detallepeli.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
+                <p class="titulo"><strong>${data.results[i].original_title}</p>
+                <p class="estreno"><strong>Estreno: ${data.results[i].release_date}</p>
+                </article>
+            </section>
+                `
+        }
+        })
+        .catch(function(error){
+            console.log("Hay un error")
+        })
+    })
