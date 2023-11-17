@@ -17,7 +17,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${apikey}`)
     <a href="./detallepeli.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
     <p class="titulo"><strong>${data.results[i].original_title}</p>
     <p class="estreno"><strong>Estreno: ${data.results[i].release_date}</p>
-    </article>
+    </article>c
         `
  }
 })

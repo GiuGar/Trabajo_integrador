@@ -6,9 +6,6 @@ let nombre = querystring.get("busqueda")
 let columnas = document.querySelector(".columnas")
 let resultados = document.querySelector(".resultados")
 
-resultados.innerText = `Resultados de búsqueda para: ${nombre}`
-
-
 fetch(`https://api.themoviedb.org/3/search/movie?query=${nombre}&api_key=${apikey}`)
 .then(function(resp) {
     return resp.json()
@@ -16,6 +13,13 @@ fetch(`https://api.themoviedb.org/3/search/movie?query=${nombre}&api_key=${apike
 .then(function(datos){
     console.log(datos)
     let array = datos.results
+
+    if (array.length == 0){
+        resultados.innerText = `No hay resultados de busqueda`
+    } else{
+        resultados.innerText = `Resultados de búsqueda para: ${nombre}`
+    }
+
     for (let i = 0; i < array.length; i++){
         columnas.innerHTML += `
         <article class="peli"> 
@@ -25,6 +29,7 @@ fetch(`https://api.themoviedb.org/3/search/movie?query=${nombre}&api_key=${apike
         </article>
         `
     }
+
 })
 .catch(function(error){
     console.log("Hay un error")

@@ -5,12 +5,12 @@ let series = document.querySelector(".seriess")
 fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apikey}`)
 .then(function(resp){
     return resp.json()
-})
+}) 
 .then(function(data){
  console.log(data)
  for(let i = 0; i < data.genres.length; i++){
     pelis.innerHTML += `
-    <a class="cuadro" href="./detallegeneros.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
+    <a class="cuadro" href="./detallegeneros.html?id=${data.genres[i].id}&name=${data.genres[i].name}">${data.genres[i].name}</a>
         `
  }
 })
