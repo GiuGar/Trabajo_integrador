@@ -27,9 +27,8 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=${apikey}`)
  console.log(data)
  for(let i = 0; i < data.genres.length; i++){
     series.innerHTML += `
-    <a class="cuadro" href="./detallegeneros.html?id=${data.genres[i].id}name=${data.genres[i].name}">${data.genres[i].name}</a>
+    <a class="cuadro" href="./detallegeneros.html?id=${data.genres[i].id}&name=${data.genres[i].name}">${data.genres[i].name}</a>
         `
-        // Acá trate de buscar el nombre pero creo que está mal
  }
 })
 .catch(function(error){

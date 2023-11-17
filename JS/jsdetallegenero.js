@@ -17,9 +17,8 @@ fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apikey}&with_genres
     return resp.json()
 })
 .then(function(data){
- console.log("Generos", data)
+ console.log("Peliculas", data)
     let largo = data.results
-    console.log(largo)
         for(let i = 0; i < largo.length; i++){
             pelis.innerHTML += `
             <article class="peli"> 
@@ -39,15 +38,15 @@ fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${apikey}&with_genres=${
     return resp.json()
 })
 .then(function(data){
- console.log("Generos", data)
+ console.log("Series", data)
     let largo = data.results
-    console.log(largo)
         for(let i = 0; i < largo.length; i++){
-            pelis.innerHTML += `
+            series.innerHTML += `
             <article class="peli"> 
-            <a href="./detallepeli.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
-            <p class="titulo"><strong>${data.results[i].title}</p>
-            <p class="estreno"><strong>Estreno: ${data.results[i].release_date}</p>
+            <a href="./detalleserie.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
+            <p class="titulo"><strong>${data.results[i].name}</p>
+            <p class="estreno"><strong>Estreno: ${data.results[i].first_air_date
+            }</p>
             </article>
             `
         }

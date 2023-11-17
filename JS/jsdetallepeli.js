@@ -18,7 +18,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
  for(let i=0; i < data.genres.length; i++){
     console.log(data.genres[i])
     generosHtml += ` <p class="texto">
-    <strong></strong> <a class="texto1" href="./detallegeneros.html">${data.genres[i].name}</a>
+    <strong></strong> <a class="texto1" href="./detallegeneros.html?id=${data.genres[i].id}&name=${data.genres[i].name}">${data.genres[i].name}</a>
     </p>`
  }
 
