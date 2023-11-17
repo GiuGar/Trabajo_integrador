@@ -6,6 +6,7 @@ let id = querystring.get("id")
 let detalle = document.querySelector(".detalle")
 let rec = document.querySelector(".rec")
 let titrec = document.querySelector(".titrec")
+let verdad = false
 
 fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
 .then(function(resp){
@@ -13,6 +14,14 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
 })
 .then(function(data){
  console.log(data)
+ let generosHtml = ""
+ for(let i=0; i < data.genres.length; i++){
+    console.log(data.genres[i])
+    generosHtml += ` <p class="texto">
+    <strong>Género:</strong> <a class="texto1" href="./detallegeneros.html">${data.genres[i].name}</a>
+    </p>`
+ }
+
  detalle.innerHTML += `
     <article class="izquierda">
     <img class="poster" src="https://image.tmdb.org/t/p/w500${data.poster_path}"/>
@@ -27,7 +36,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
         <p class="texto"><strong>Calificación: ${data.vote_average}</strong></p>
         <p class="texto"><strong>Fecha de estreno:</strong> ${data.release_date}</p>
         <p class="texto"><strong>Duración:</strong> ${data.runtime} mins</p>
-        <p class="texto"><strong>Género:</strong> <a class="texto1" href="./detallegeneros.html">${data.genres[0].name}</a></p>
+        ${generosHtml}
     </div>
     <div class="favs">
         <a href="favoritos.html" class="corazon fa-regular fa-heart fa-2xl"></a>
@@ -40,7 +49,8 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
 })
 
 titrec.addEventListener("click", function() {
-
+    if (verdad == false) {
+        verdad = true
         fetch(`https://api.themoviedb.org/3/movie/${id}/recommendations?api_key=${apikey}`)
         .then(function(resp){
             return resp.json()
@@ -50,6 +60,7 @@ titrec.addEventListener("click", function() {
         for(let i = 0; i < 5; i++){
             rec.innerHTML += `
             <section class="reco">
+            //como meter el for ac[a, para que no cargue todas las veces reco.
                 <article class="peli"> 
                 <a href="./detallepeli.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
                 <p class="titulo"><strong>${data.results[i].original_title}</p>
@@ -61,5 +72,5 @@ titrec.addEventListener("click", function() {
         })
         .catch(function(error){
             console.log("Hay un error")
-        })
+        })}
     })
