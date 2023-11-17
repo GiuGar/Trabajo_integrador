@@ -4,7 +4,7 @@ let busqueda = location.search
 let querystring = new URLSearchParams(busqueda)
 let id = querystring.get("id")
 let detalle = document.querySelector(".detalle")
-let rec = document.querySelector(".rec")
+let rec = document.querySelector(".reco")
 let titrec = document.querySelector(".titrec")
 let verdad = false
 
@@ -18,7 +18,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
  for(let i=0; i < data.genres.length; i++){
     console.log(data.genres[i])
     generosHtml += ` <p class="texto">
-    <strong>Género:</strong> <a class="texto1" href="./detallegeneros.html">${data.genres[i].name}</a>
+    <strong></strong> <a class="texto1" href="./detallegeneros.html">${data.genres[i].name}</a>
     </p>`
  }
 
@@ -36,6 +36,7 @@ fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
         <p class="texto"><strong>Calificación: ${data.vote_average}</strong></p>
         <p class="texto"><strong>Fecha de estreno:</strong> ${data.release_date}</p>
         <p class="texto"><strong>Duración:</strong> ${data.runtime} mins</p>
+        <p class= "texto"><strong>Géneros:</strong></p>
         ${generosHtml}
     </div>
     <div class="favs">
@@ -59,14 +60,11 @@ titrec.addEventListener("click", function() {
         console.log("Recomendaciones", data)
         for(let i = 0; i < 5; i++){
             rec.innerHTML += `
-            <section class="reco">
-            //como meter el for ac[a, para que no cargue todas las veces reco.
                 <article class="peli"> 
                 <a href="./detallepeli.html?id=${data.results[i].id}"><img class="imagen" src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"/></a>
                 <p class="titulo"><strong>${data.results[i].original_title}</p>
                 <p class="estreno"><strong>Estreno: ${data.results[i].release_date}</p>
                 </article>
-            </section>
                 `
         }
         })

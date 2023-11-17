@@ -4,6 +4,10 @@ let busqueda = location.search
 let querystring = new URLSearchParams(busqueda)
 let nombre = querystring.get("busqueda")
 let columnas = document.querySelector(".columnas")
+let resultados = document.querySelector(".resultados")
+
+resultados.innerText = `Resultados de búsqueda para: ${nombre}`
+
 
 fetch(`https://api.themoviedb.org/3/search/movie?query=${nombre}&api_key=${apikey}`)
 .then(function(resp) {
@@ -47,6 +51,3 @@ fetch(`https://api.themoviedb.org/3/search/tv?query=${nombre}&api_key=${apikey}`
 .catch(function(error){
     console.log("Hay un error")
 })
-
-
-// Falta el de series 
