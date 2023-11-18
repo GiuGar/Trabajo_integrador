@@ -40,7 +40,7 @@ fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apikey}`)
         ${generosHtml}
     </div>
     <div class="favs">
-        <a href="favoritos.html" class="corazon fa-regular fa-heart fa-2xl"></a>
+        <span onClick='agregarysacardefavoritosS(${data.id})' class="corazon fa-regular fa-heart fa-2xl"></span>
     </div>
     </article>
     `
@@ -72,3 +72,24 @@ titrec.addEventListener("click", function() {
             console.log("Hay un error")
         })}
     })
+
+    function agregarysacardefavoritosS(id){
+        let favoritosStorage = localStorage.getItem("favoritosS")
+        if (favoritosStorage !== null){
+            let favoritosParseado = JSON.parse(favoritosStorage)
+            let posiciondemiid = favoritosParseado.indexOf(id)
+            if (posiciondemiid >= 0){
+                let favoritosSinElId = favoritosParseado.slice()
+            } else {
+                favoritosParseado.push(id)
+                let favStringificado = JSON.stringify(favoritosParseado)
+                localStorage.setItem("favoritosS", favStringificado)
+            }
+
+        } else {
+            let arrFavoritos = [id]
+            let favoritoStringificado = JSON.stringify(arrFavoritos)
+            localStorage.setItem('favoritosS', favoritoStringificado)
+            console.log('Funciona el boton')
+        }
+    }

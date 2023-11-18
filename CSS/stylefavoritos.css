@@ -77,6 +77,7 @@ body {
     width: 90%;
     font-size: xx-large;
     color: white;
+    text-align: center;
  }
 
 .columnas {
@@ -112,6 +113,13 @@ body {
     color: white;
     font-size: 12px;
     margin-top: 0px;
+ }
+
+.tit {
+    width: 40%;
+    font-size: x-large;
+    color: white;
+    text-align: center;
  }
 
 footer {
